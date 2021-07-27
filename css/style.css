@@ -15,10 +15,8 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-div {
-    /* Giving everything a grey border for testing purposes */
+body {
     border: 1px solid lightgrey;
-    /* / */
 }
 
 .main-container {

@@ -3,7 +3,66 @@ body {
     margin: 0px;
     border: 0px;
     padding: 0px;
-    /*  */
+    /* / */
+    /* Setting the box-sizing property
+     to tell the browser to account
+     for any border and padding, in 
+     the values specified for an 
+     element's width and height
+     via https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
     box-sizing: border-box;
+    /* / */
     font-family: "Lato", sans-serif;
+}
+
+div {
+    /* Giving everything a grey border for testing purposes */
+    border: 1px solid lightgrey;
+    /* / */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+/* header */
+.header {
+    grid-row: 1 / 2; 
+    grid-column: span 6;
+}
+
+.header .nav {
+    grid-column: 1 / 5;
+}
+
+.header .header-logo {
+    grid-column: 5 / span 1;
+}
+/* / */
+
+.hero {
+    grid-row: 2 / 3;
+    grid-column: span 5;
+}
+
+.projects {
+    grid-row: 3 / 6;
+    grid-column: span 5;
+}
+
+.footer {
+    grid-row: 6 / 7;
+    grid-column: span 5;
 }

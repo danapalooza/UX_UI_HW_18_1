@@ -14,17 +14,18 @@ body {
     /* / */
     font-family: "Lato", sans-serif;
 }
-
-div {
-    /* Giving everything a grey border for testing purposes */
+body {
     border: 1px solid lightgrey;
-    /* / */
 }
 
 .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "nav nav nav nav logo"
+        "hero hero hero hero hero"
+        ;
 }
 
 ul {
